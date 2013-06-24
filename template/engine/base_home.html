@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="/media/engine/base_home.css" />		
+			
+	</head>
+	<body>
+		<div class='main_frame'>
+			
+			<!-- TOP -->
+			<div class='top_frame'>
+				<div class='top_logo_frame'>
+					<div class='logo_image_holder'>
+						<img class='logo' border="0" src="/media/Images/sci_logo.jpg" width="150" height="110" />						
+					</div>
+					<div class='top_menu_frame'>
+						<div class ='top_menu_frame_menu_options'>HOME</div>
+						<div class ='top_menu_frame_menu_options'>TEAM</div>
+                    </div>
+				</div>
+			</div>
+
+			<!-- MIDDLE -->
+			<div class='middle_frame'>
+				
+			    {% block content %} {% endblock %}
+		    
+			</div>
+			
+			<!-- FOOTER FRAME -->
+			<div class='footer_frame'>
+ 				<div class='footer_text'>
+					Alexander Chen 2012
+				</div>
+			</div>
+			
+		</div>
+		<!-- JS -->			
+		<script type='text/javascript' src="/media/engine/base_home.js"></script>
+	</body>	
+</html>

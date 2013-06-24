@@ -1,0 +1,132 @@
+/*******************************************************
+**			Dataset Graph Content
+*******************************************************/
+
+.dataset_title
+{
+	width:100%;
+	height:30px;
+	float:left;
+	margin-top:20px;
+	font-size:20px;
+	font-family:Arial;
+	/*border: 1px solid #950019;*/
+}
+
+/* display method == dimension reduction algorithm */
+.dataset_display_method
+{
+	width:100%;
+	height:40px;
+	font-size:20px;
+	font-family:Arial;
+	float:left;
+	/*border: 1px solid #950019;*/
+}
+
+.dataset_display_method_inner
+{
+	margin-top:10px;
+	float:left;
+}
+
+/* display method option */
+.dataset_display_method_option
+{
+	height:35px;
+	margin-left:20px;
+	float:left;
+	cursor:pointer;
+	border-radius: 5px;
+	border: 5px solid #fcae14;
+}
+
+.dataset_display_method_option_selected
+{
+	height:35px;
+	margin-left:20px;
+	float:left;
+	cursor:pointer;
+	border-radius: 5px;
+	background-color:#f0d7af;
+	border: 5px solid #fcae14;
+}
+
+.dataset_display_method_option_inner
+{
+	margin-top:6px;
+	float:left;
+	margin-left:5px;
+	margin-right:5px;
+	text-align:center;
+	/*border: 1px solid #950019;*/
+}
+
+/* japlot graph */
+.data_graph
+{
+	margin-top:95px;
+	/*border: 1px solid #950019;*/
+}
+
+/* download & share button */
+.downlaod_and_share_frame
+{
+	width:100%;
+	height:50px;
+	margin-top:20px;
+	margin-bottom:20px;
+	/*border: 1px solid #950019;*/
+}
+
+.ok_button_inner_download
+{
+	width:150px;
+	height:30px;
+	margin-top:8px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	/*border: 1px solid #950019;*/
+}	
+
+.ok_button_outter_download
+{
+	width:290px;
+	height:40px;
+	margin-top:5px;
+	margin-left:5px;
+	font-family:Arial;
+	font-size:20px;
+	float:left;
+	cursor:pointer;
+	border-radius: 5px;
+	border: 5px solid #fcae14;
+}
+
+.ok_button_inner_share
+{
+	width:100px;
+	height:30px;
+	margin-top:8px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	/*border: 1px solid #950019;*/
+}	
+
+.ok_button_outter_share
+{
+	width:290px;
+	height:40px;
+	margin-top:5px;
+	margin-left:10px;
+	font-family:Arial;
+	font-size:20px;
+	color:black;
+	float:left;
+	cursor:pointer;
+	border-radius: 5px;
+	border: 5px solid #fcae14;
+		
+}

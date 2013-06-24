@@ -1,0 +1,517 @@
+.body
+{
+	background-color:white;
+}
+
+.main_frame
+{
+	width:950px;
+	margin-left:auto;
+	margin-right:auto;
+	/*border: 1px solid purple;*/
+}
+
+/*******************************************************
+**			Top Frame
+**				Logo Placement
+**				Menu
+********************************************************/
+
+.top_frame
+{
+	width:100%;
+	height:180px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#950019;
+	border-radius: 15px;
+	/*border: 1px solid red;*/
+}
+
+.top_logo_frame
+{
+	width:100%;
+	height:125px;
+	margin-left:auto;
+	margin-right:auto;
+	/*border: 1px solid white;*/
+}
+
+.logo_image_holder
+{
+	width:150px;
+	height:125px;
+	margin-left:auto;
+	margin-right:auto;
+	/*border: 1px solid white;*/
+}
+
+.logo
+{
+	margin-top:10px;
+}
+
+.top_menu_frame
+{
+	width:90%;
+	height:45px;
+	margin-left:17px;
+	/*border: 1px solid white;*/
+}
+
+.top_menu_frame_menu_options
+{
+	float:left;
+	color:white;
+	margin-left:30px;
+	margin-top:12px;
+	font-size:23px;
+	cursor:pointer;
+	font-family:Arial;
+	/*border: 1px solid white;*/
+}
+
+
+/*******************************************************
+**			Middle Frame
+**				Content
+**				Cluster Engine Interface
+********************************************************/
+
+.middle_frame
+{
+	width:100%;
+	margin-top:3px;
+	border-radius: 15px;
+	border: 1px solid #950019;
+}
+
+.blank_frame
+{
+	margin-top:20px;
+}
+/* dropdown menu */
+.dropdown_frame
+{
+	width:100%;	
+	float:left;
+	/*border: 1px solid #950019;*/
+}
+
+.dropdown_title
+{
+	width:600px;
+	height:35px;	
+	margin-top:10px;
+	margin-left:15px;
+	text-align:center;
+	float:left;
+	font-size:20px;
+	font-family:Arial;
+	cursor:pointer;
+	border-radius: 5px;	
+	border: 1px solid #950019;
+}
+
+.dropdown_title_inner
+{
+	margin-top:5px;
+}
+
+.dropdown_label
+{
+	width:100px;	
+	margin-top:15px;
+	margin-left:45px;
+	float:left;
+	font-size:20px;
+	font-family:Arial;
+	border-radius: 5px;	
+	/*border: 1px solid #950019;*/
+}
+
+.dropdown_container
+{
+	width:600px;	
+	margin-bottom:10px;
+	margin-top:45px;
+	margin-left:160px;
+	display:none;
+	background-color:#f0d7af;
+	z-index:1;
+	position:absolute;
+	border-radius: 5px;
+	border: 1px solid #950019;
+}
+
+.dropdown_option_inner
+{
+	margin-top:1px;
+	margin-left:2px;
+	margin-right:10px;
+	/*border: 1px solid #950019;*/
+}	
+
+.dropdown_option_outter
+{
+	width:600px;
+	height:30px;
+	margin-top:5px;
+	font-size:20px;
+	font-family:Arial;
+	cursor:pointer;	
+	float:left;
+	border-radius: 5px;
+	/*border: 1px solid #950019;*/
+}
+
+/* parameters setups */
+.parameters_frame
+{
+	width:100%;
+	float:left;
+	/*border: 1px solid #950019;*/
+}
+
+.parameters_label
+{
+	width:200px;	
+	margin-top:10px;
+	margin-left:45px;
+	font-size:20px;
+	font-family:Arial;
+	border-radius: 5px;	
+	/*border: 1px solid #950019;*/
+}
+
+.parameters_container
+{
+	/*width:715px;*/
+	width:600px;
+	margin-top:10px;
+	/*margin-left:45px;*/
+	margin-left:160px;
+	font-size:20px;
+	font-family:Arial;
+	float:left;
+	border-radius: 5px;	
+	border: 1px solid #950019;
+}
+
+.parameters_options_text_box
+{
+	height:30px;
+	margin-left:20px;
+	margin-top:10px;
+	/*border: 1px solid #950019;*/
+}
+
+.parameters_options_input_box
+{
+	font-size:15px;
+	float:left;
+	height:30px;
+	/*border: 1px solid #950019;*/
+}
+
+.parameters_options_label_box
+{
+	width:170px;
+	font-size:20px;
+	float:left;
+	height:30px;
+	/*border: 1px solid #950019;*/
+
+}
+
+.parameters_blank
+{
+	height:10px;
+}
+
+/* ok button */
+.ok_button_frame
+{
+	width:600px;
+	height:50px;
+	margin-left:160px;
+	margin-top:5px;
+	float:left;
+	/*border: 1px solid #950019;*/
+}
+
+.ok_button_inner_start
+{
+	width:100px;
+	height:30px;
+	margin-top:7px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	/*border: 1px solid #950019;*/
+}	
+
+.ok_button_outter_start
+{
+	width:290px;
+	height:40px;
+	margin-top:5px;
+	font-family:Arial;
+	font-size:25px;
+	color:green;
+	float:left;
+	cursor:pointer;
+	border: 5px solid green;
+	border-radius: 10px;	
+}
+
+.ok_button_inner_stop
+{
+	width:100px;
+	height:30px;
+	margin-top:7px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	/*border: 1px solid #950019;*/
+}	
+
+.ok_button_outter_stop
+{
+	width:285px;
+	height:40px;
+	margin-top:5px;
+	margin-left:11px;
+	font-family:Arial;
+	font-size:25px;
+	color:#950019;
+	float:left;
+	cursor:pointer;
+	border: 5px solid #950019;
+	border-radius: 10px;	
+}
+
+
+/*******************************************************
+**			Graphing Frame
+**				Graph Tabs
+**
+********************************************************/
+
+.graph_tabs
+{
+	width:850px;
+	margin-left:45px;	
+	margin-top:260px;
+	margin-bottom:25px;
+	border-radius: 10px;
+	border: 1px solid #950019;		
+}
+
+.graph_tabs_top_menu
+{
+	width:850px;
+	height:50px;
+	background-color:#950019;
+	border-radius: 10px;
+	border: 1px solid #950019;
+}
+
+.graph_tabs_top_menu_options
+{
+	height:40px;
+	margin-left:10px;
+	margin-top:5px;
+	float:left;
+	font-family:Arial;
+	font-size:20px;
+	color:#950019;
+	cursor:pointer;
+	background-color:white;
+	border-radius: 5px;
+}
+
+.graph_tabs_top_menu_options_selected
+{
+	height:40px;
+	margin-left:5px;
+	margin-top:5px;
+	float:left;
+	font-family:Arial;
+	font-size:20px;
+	color:#950019;
+	cursor:pointer;
+	background-color:white;
+	border-radius: 5px;
+	border: 5px solid #fcae14;
+}
+
+.graph_tabs_top_menu_options_text_box
+{
+	margin-top:8px;
+	margin-left:8px;
+	margin-right:8px;
+}
+
+.graph_content
+{
+	width:800px;
+	margin-top:0px;
+	margin-left:auto;
+	margin-right:auto;
+	border: 1px solid white;
+}
+
+/*******************************************************
+**			Dataset Graph Content
+*******************************************************/
+
+.dataset_title
+{
+	width:100%;
+	height:30px;
+	float:left;
+	margin-top:20px;
+	font-size:20px;
+	font-family:Arial;
+	/*border: 1px solid #950019;*/
+}
+
+/* display method == dimension reduction algorithm */
+.dataset_display_method
+{
+	width:100%;
+	height:40px;
+	font-size:20px;
+	font-family:Arial;
+	float:left;
+	/*border: 1px solid #950019;*/
+}
+
+.dataset_display_method_inner
+{
+	margin-top:10px;
+	float:left;
+}
+
+/* display method option */
+.dataset_display_method_option
+{
+	height:35px;
+	margin-left:20px;
+	float:left;
+	cursor:pointer;
+	border-radius: 5px;
+	border: 5px solid #fcae14;
+}
+
+.dataset_display_method_option_selected
+{
+	height:35px;
+	margin-left:20px;
+	float:left;
+	cursor:pointer;
+	border-radius: 5px;
+	background-color:#f0d7af;
+	border: 5px solid #fcae14;
+}
+
+.dataset_display_method_option_inner
+{
+	margin-top:6px;
+	float:left;
+	margin-left:5px;
+	margin-right:5px;
+	text-align:center;
+	/*border: 1px solid #950019;*/
+}
+
+/* japlot graph */
+.data_graph
+{
+	margin-top:95px;
+}
+
+/* download & share button */
+.downlaod_and_share_frame
+{
+	width:100%;
+	height:50px;
+	margin-top:20px;
+	margin-bottom:20px;
+	/*border: 1px solid #950019;*/
+}
+
+.ok_button_inner_download
+{
+	width:150px;
+	height:30px;
+	margin-top:8px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	/*border: 1px solid #950019;*/
+}	
+
+.ok_button_outter_download
+{
+	width:290px;
+	height:40px;
+	margin-top:5px;
+	margin-left:5px;
+	font-family:Arial;
+	font-size:20px;
+	float:left;
+	cursor:pointer;
+	border-radius: 5px;
+	border: 5px solid #fcae14;
+}
+
+.ok_button_inner_share
+{
+	width:100px;
+	height:30px;
+	margin-top:8px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	/*border: 1px solid #950019;*/
+}	
+
+.ok_button_outter_share
+{
+	width:290px;
+	height:40px;
+	margin-top:5px;
+	margin-left:10px;
+	font-family:Arial;
+	font-size:20px;
+	color:black;
+	float:left;
+	cursor:pointer;
+	border-radius: 5px;
+	border: 5px solid #fcae14;
+		
+}
+
+/* footer */
+.footer_frame
+{
+	width:100%;
+	height:40px;
+	margin-top:5px;
+	border-radius: 10px;
+	background-color:#950019;	
+	border: 1px solid #950019;
+}
+.footer_text
+{
+	width:200px;
+	color:white;
+	margin:auto;
+	margin-top:8px;
+	font-family:Arial;
+	font-size:20px;
+	/*border: 1px solid white;*/
+}
+

@@ -1,0 +1,109 @@
+.body
+{
+	background-color:white;
+}
+
+.main_frame
+{
+	width:950px;
+	margin-left:auto;
+	margin-right:auto;
+	/*border: 1px solid purple;*/
+}
+
+/*******************************************************
+**			Top Frame
+**				Logo Placement
+**				Menu
+********************************************************/
+
+.top_frame
+{
+	width:100%;
+	height:180px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#950019;
+	border-radius: 15px;
+	/*border: 1px solid red;*/
+}
+
+.top_logo_frame
+{
+	width:100%;
+	height:125px;
+	margin-left:auto;
+	margin-right:auto;
+	/*border: 1px solid white;*/
+}
+
+.logo_image_holder
+{
+	width:150px;
+	height:125px;
+	margin-left:auto;
+	margin-right:auto;
+	/*border: 1px solid white;*/
+}
+
+.logo
+{
+	margin-top:10px;
+}
+
+.top_menu_frame
+{
+	width:90%;
+	height:45px;
+	margin-left:17px;
+	/*border: 1px solid white;*/
+}
+
+.top_menu_frame_menu_options
+{
+	float:left;
+	color:white;
+	margin-left:30px;
+	margin-top:12px;
+	font-size:23px;
+	cursor:pointer;
+	font-family:Arial;
+	/*border: 1px solid white;*/
+}
+
+
+/*******************************************************
+**			Middle Frame
+**				Content
+**				Cluster Engine Interface
+********************************************************/
+
+.middle_frame
+{
+	width:100%;
+	margin-top:3px;
+	border-radius: 15px;
+	border: 1px solid #950019;
+}
+
+/* footer */
+.footer_frame
+{
+	width:100%;
+	height:40px;
+	margin-top:5px;
+	border-radius: 10px;
+	background-color:#950019;	
+	border: 1px solid #950019;
+}
+.footer_text
+{
+	width:200px;
+	color:white;
+	margin:auto;
+	margin-top:8px;
+	font-family:Arial;
+	font-size:20px;
+	/*border: 1px solid white;*/
+}
+

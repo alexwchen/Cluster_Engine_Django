@@ -1,0 +1,128 @@
+{% extends "engine/base_home.html" %}
+
+{% block content %}
+	<link rel="stylesheet" type="text/css" href="/media/engine/engine_interface.css" />		
+				
+	<div class='blank_frame'></div>
+
+	<!-- SELECT ALGORITHM -->
+	<div class='dropdown_frame'>
+		<div class='dropdown_label'>Algorithm:</div>
+		<div id='selected_algorithm' class='dropdown_title'><div class='dropdown_title_inner'>Choose An Algorithm</div></div>
+		<div class='dropdown_container'>
+			{% for algo in algorithms %}				
+			<div class='dropdown_option_outter'>
+				<div class='dropdown_option_inner'>
+					{{ algo }}
+				</div>
+			</div>
+			{% endfor %}			
+		</div>		
+	</div>
+	
+	<!-- SELECT DATASETS -->
+	<div class='dropdown_frame'>		
+		<div class='dropdown_label'>Dataset:</div>		
+		<div id='selected_dataset' class='dropdown_title'><div class='dropdown_title_inner'>Choose A Dataset</div></div>
+		<div class='dropdown_container'>
+
+			{% for dataset in datasets %}																
+			<div class='dropdown_option_outter'>
+				<div class='dropdown_option_inner'>
+					{{ dataset }}
+				</div>
+			</div>
+			{% endfor %}
+			<div class='dropdown_option_outter'>
+				<div class='dropdown_option_inner'>
+					{{ upload }}
+				</div>
+			</div>			
+		</div>
+	</div>
+    
+    <!-- UPLOAD FILE -->
+    <div class='dropdown_frame'>		
+		
+		<!-- Upload form. Note enctype attribute! action="/engine/list/"-->
+		<form class='file_upload_input' action="" method="post" enctype="multipart/form-data">
+			{% csrf_token %}
+			<p>{{ form.non_field_errors }}</p>
+			<!--<p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>-->
+			<p>
+				{{ form.docfile.errors }}
+				{{ form.docfile }}
+				<input class='submit_button' type="submit" value="Upload" />
+			</p>
+		</form>
+
+	</div>
+
+	<!-- SET PARAMETERS ALGO-->
+	<div class='parameters_frame'>		
+		<div class='parameters_label'>Algorithm Parameters:</div>		
+		<div id='algo_para_container' class='parameters_container'>
+			
+			<div id='algo_para_box' class='parameters_options_text_box'>
+				<div class='parameter_message'> Please Select Algorithm</div>
+			</div>
+			
+			<div class='parameters_blank'> </div>
+		</div>
+	</div>
+
+	<!-- SET PARAMETERS DATA-->
+	<div class='parameters_frame'>		
+		<div class='parameters_label'>Dataset Parameters:</div>		
+		<div id='data_para_container' class='parameters_container'>
+			
+			<div id='data_para_box' class='parameters_options_text_box'>
+				<div class='parameter_message'> Please Select Dataset</div>
+			</div>
+			
+			<div class='parameters_blank'> </div>
+		</div>
+	</div>
+
+	<div class='ok_button_frame'>
+		<div class='ok_button_outter_start'>
+			<div class='ok_button_inner_start'>START</div>
+		</div>
+		<div class='ok_button_outter_stop'>
+			<div class='ok_button_inner_stop'>STOP</div>
+		</div>
+	</div>
+
+
+	<!-- DISPLAY DATASET -->
+	<div class='graph_tabs'>
+		<div class='graph_tabs_top_menu'>
+			<div id='default_tab' class='graph_tabs_top_menu_options'> 
+				<div class='graph_tabs_top_menu_options_text_box'><b> Original Dataset </b></div>
+			</div>
+			<div class='graph_tabs_top_menu_options'> <div class='graph_tabs_top_menu_options_text_box'><b> Clustered Dataset </b></div></div>
+			<!-- <div class='graph_tabs_top_menu_options'> <div class='graph_tabs_top_menu_options_text_box'><b> Objective Function </b></div></div> -->
+		</div>
+		<div id='Original_Dataset' class='graph_content'>
+			{% include "engine/original_dataset.html" %}
+		</div>
+		
+		
+		<div id='Clustered_Dataset' class='graph_content'>
+			{% include "engine/clustered_dataset.html" %}
+		</div>
+		
+		
+		<div id='Objective_Function' class='graph_content'>	
+			{#{% include "engine/objective_function.html" %}#}
+		</div>
+	</div>				
+
+	<!-- JS -->			
+	<script type='text/javascript' src="/media/JQ_LIB/jquery.js"></script>
+	<script type='text/javascript' src="/media/engine/engine_interface.js"></script>
+	<script type="text/javascript" src="/media/JQ_LIB/jquery.jqplot.min.js"></script>
+	<script type="text/javascript" src="/media/JQ_LIB/jqplot.canvasTextRenderer.min.js"></script>
+	<script type="text/javascript" src="/media/JQ_LIB/jqplot.canvasAxisLabelRenderer.min.js"></script>
+		
+{% endblock %}

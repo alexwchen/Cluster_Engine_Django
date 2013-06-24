@@ -1,0 +1,205 @@
+<html>
+	<head>
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="/media/engine/home.css" />		
+			
+	</head>
+	<body>
+		<div class='main_frame'>
+			
+			<!-- TOP -->
+			<div class='top_frame'>
+				<div class='top_logo_frame'>
+					<div class='logo_image_holder'>
+						<img class='logo' border="0" src="/media/Images/sci_logo.jpg" width="150" height="110" />						
+					</div>
+					<div class='top_menu_frame'>
+						<div class ='top_menu_frame_menu_options'>HOME</div>
+						<div class ='top_menu_frame_menu_options'>UPLOAD</div>
+						<div class ='top_menu_frame_menu_options'>TEAM</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- MIDDLE -->
+			<div class='middle_frame'>
+				
+				<div class='blank_frame'></div>
+				<div class='dropdown_frame'>
+
+					<!-- SELECT ALGORITHM -->
+					<div class='dropdown_label'>Algorithm:</div>
+					<div class='dropdown_title'><div class='dropdown_title_inner'>Choose An Algorithm</div></div>
+					<div class='dropdown_container'>
+										
+						<div class='dropdown_option_outter'>
+							<div class='dropdown_option_inner'>
+								K-Means
+							</div>
+						</div>
+					
+						<div class='dropdown_option_outter'>
+							<div class='dropdown_option_inner'>
+								Greedy Pairwise Model
+							</div>
+						</div>
+					
+						<div class='dropdown_option_outter'>
+							<div class='dropdown_option_inner'>
+								Affinity Propagation
+							</div>
+						</div>
+					
+						<div class='dropdown_option_outter'>
+							<div class='dropdown_option_inner'>
+								Greedy Pairwise Model With Simulate Annealing
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<!-- SELECT DATASETS -->
+				<div class='dropdown_frame'>		
+					<div class='dropdown_label'>Dataset:</div>		
+					<div class='dropdown_title'><div class='dropdown_title_inner'>Choose A Dataset</div></div>
+					<div class='dropdown_container'>
+															
+						<div class='dropdown_option_outter'>
+							<div class='dropdown_option_inner'>
+								Toy Problem
+							</div>
+						</div>
+				
+						<div class='dropdown_option_outter'>
+							<div class='dropdown_option_inner'>
+								Travel Routine
+							</div>
+						</div>
+				
+						<div class='dropdown_option_outter'>
+							<div class='dropdown_option_inner'>
+								Handwritten Digits From US Postal Service
+							</div>
+						</div>
+				
+						<div class='dropdown_option_outter'>
+							<div class='dropdown_option_inner'>
+								Clustering Images Derived From Olivetti Face Database
+							</div>
+						</div>
+				
+						<div class='dropdown_option_outter'>
+							<div class='dropdown_option_inner'>
+								Gene Finding
+							</div>
+						</div>
+						
+					</div>
+				</div>
+
+				<!-- SET PARAMETERS -->
+				<div class='parameters_frame'>		
+					<div class='parameters_label'>Algorithm Parameters:</div>		
+					<div class='parameters_container'>
+						<div class='parameters_options_text_box'>
+							<div class='parameters_options_label_box'>Max Iteration:</div>
+							<input class='parameters_options_input_box' type="text" name="max_iter" value="150" />
+						</div>
+						
+						<div class='parameters_options_text_box'>
+							<div class='parameters_options_label_box'>Stop Criterian: </div>
+							<input class='parameters_options_input_box' type="text" name="max_iter" value="150" />
+						</div>
+						<div class='parameters_options_text_box'>
+							<div class='parameters_options_label_box'>Damping Factor: </div>
+							<input class='parameters_options_input_box' type="text" name="max_iter" value="150" />
+						</div>
+						<div class='parameters_options_text_box'>
+							<div class='parameters_options_label_box'>Preference: </div>
+							<input class='parameters_options_input_box' type="text" name="max_iter" value="150" />
+						</div>
+						<div class='parameters_blank'> </div>
+						
+					</div>
+				</div>
+
+				<div class='ok_button_frame'>
+					<div class='ok_button_outter_start'>
+						<div class='ok_button_inner_start'>START</div>
+					</div>
+					<div class='ok_button_outter_stop'>
+						<div class='ok_button_inner_stop'>STOP</div>
+					</div>
+				</div>
+
+
+				<!-- DISPLAY DATASET -->
+				<div class='graph_tabs'>
+					<div class='graph_tabs_top_menu'>
+						<div id='default_tab' class='graph_tabs_top_menu_options'> 
+							<div class='graph_tabs_top_menu_options_text_box'><b> Original Dataset </b></div>
+						</div>
+						<div class='graph_tabs_top_menu_options'> <div class='graph_tabs_top_menu_options_text_box'><b> Clustered Dataset </b></div></div>
+						<div class='graph_tabs_top_menu_options'> <div class='graph_tabs_top_menu_options_text_box'><b> Objective Function </b></div></div>						
+					</div>
+					<div id='Original_Dataset' class='graph_content'>
+						<div class='dataset_title'> Dataset Name: Travel Routine </div>
+						<div class='dataset_display_method'> 
+							<div class='dataset_display_method_inner'> Dimension Reduction Algorithm: </div>
+							<div class='dataset_display_method_option_selected'> 
+								<div class='dataset_display_method_option_inner'> Multidimensional Scaling (MDS) </div>
+							</div>
+							<div class='dataset_display_method_option'> <div class='dataset_display_method_option_inner'> ISOMAP </div></div>							
+						</div>
+						
+						<div class='data_graph' id="ori_data" style="height:500px; width:800px;"></div>
+						
+						<div class='downlaod_and_share_frame'>
+							<div class='ok_button_outter_download'>
+								<div class='ok_button_inner_download'>DOWNLOAD</div>
+							</div>
+							<div class='ok_button_outter_share'>
+								<div class='ok_button_inner_share'>SHARE</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div id='Clustered_Dataset' class='graph_content'>
+						<div class='dataset_title'> Dataset Name: Travel Routine </div>
+						<div class='dataset_display_method'> 
+							<div class='dataset_display_method_inner'> Dimension Reduction Algorithm: </div>
+							<div class='dataset_display_method_option_selected'> 
+								<div class='dataset_display_method_option_inner'> Multidimensional Scaling (MDS) </div>
+							</div>
+							<div class='dataset_display_method_option'> <div class='dataset_display_method_option_inner'> ISOMAP </div></div>							
+						</div>
+						<div class='data_graph' id="clus_data" style="height:500px; width:800px;"></div>
+					</div>
+					
+					
+					<div id='Objective_Function' class='graph_content'>	
+						<div class='dataset_title'> Dataset Name: Travel Routine </div>
+						<div class='data_graph' id="obj_func" style="height:500px; width:800px;"></div>
+					</div>
+				</div>
+					
+			</div>
+			
+			<!-- FOOTER FRAME -->
+			<div class='footer_frame'>
+ 				<div class='footer_text'>
+					Alexander Chen 2012
+				</div>
+			</div>
+			
+		</div>
+		<!-- JS -->			
+		<script type='text/javascript' src="/media/JQ_LIB/jquery.js"></script>
+		<script type="text/javascript" src="/media/JQ_LIB/jquery.jqplot.min.js"></script>
+		<script type="text/javascript" src="/media/JQ_LIB/jqplot.canvasTextRenderer.min.js"></script>
+		<script type="text/javascript" src="/media/JQ_LIB/jqplot.canvasAxisLabelRenderer.min.js"></script>
+		<script type='text/javascript' src="/media/engine/home.js"></script>
+	</body>	
+</html>
